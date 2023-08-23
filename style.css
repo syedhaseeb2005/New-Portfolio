@@ -38,7 +38,7 @@ body{
     position: fixed;
     top: 0;
     font-size: 16px;
-    margin: 0 10px;
+    margin: 0 90px;
     box-shadow: hsla(219,48%,8%,1);    
 }
 .fa-moon{
@@ -82,10 +82,6 @@ body{
     position: absolute;
     top: 40%;
     left: 50%;
-    visibility: visible;
-    opacity: 1;
-    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
-    transition: opacity 2.5s cubic-bezier(0.5, 0, 0, 1) 0.4s, transform 2.5s cubic-bezier(0.5, 0, 0, 1) 0.4s;
 }
 .text{
     color: rgb(148, 149, 149);
@@ -239,6 +235,62 @@ body{
     transform: rotate(270deg);
     font-size: 15px;
 }
+.aboutme{
+    position: absolute;
+    top: 830px;
+    left: 10%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.aboutme h3{
+    text-align: center;
+    color: #A395E9;
+    font-weight: bold;
+}
+.boxes{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-top: 1.2rem;
+}
+.box1{
+    background: hsla(219,32%,12%,1);
+    padding: 20px 50px;
+    height: 60%;
+    border-radius: 0.75rem;
+}
+.box2{
+    background: hsla(219,32%,12%,1);
+    padding: 20px 50px;
+    border-radius: 0.75rem;
+    height: 60%;
+}
+.box3{
+    background: hsla(219,32%,12%,1);
+    padding: 20px 50px;
+    border-radius: 0.75rem;
+    height: 60%;
+}
+#my-img{
+    margin-top: 1.2rem;
+    border-radius: 0.75rem;
+    width: 30%;
+    margin-right: 20px;
+}
+.para{
+    width: 50%;
+    text-align: start;
+    font-size: 16px;
+    position: absolute;
+    right: 18%;
+    top: 75%;
+}
+.imgbox{
+    display: flex;
+}
+
 
 /* Responsive Side */
 
@@ -249,8 +301,12 @@ body{
         justify-content: space-between;
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
         position: static;
-        height: 2px;
-        width: 95%;
+        /* height: 0px; */
+        padding: 0;
+        width: 100%;
+        margin-left: 0px;
+        padding-left: 5px;
+        padding-right: 5px;
     }
     .first-nav{
         height: 3.5rem;
@@ -260,7 +316,7 @@ body{
     .name{
         font-size: 14px;
         position: relative;
-        right: 5px;
+        right: 1px;
     }
     .fa-moon{
         font-size: 15px;
@@ -303,7 +359,7 @@ body{
     .navbar{
         position: fixed;
         bottom: 0;
-}
+    }
     .forImg{
         width: 60%;
         display: flex;
@@ -326,4 +382,351 @@ body{
         left: 83%;
         font-size: 9px;       
     }
+    .aboutme{
+        padding: 4.5rem 0 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        /* margin-bottom: 100%; */
+    }
+    .boxes{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        position: relative;
+        right: 10px;
+        margin-bottom: 15px;
+    }
+    .box1{
+        /* font-size: 2px; */
+        padding: 3px;
+        height: 100%;
+    }
+    .box2{
+        padding: 3px;
+        height: 100%;
+    }
+    .box3{
+        padding: 3px;
+        height: 100%;
+    }
+    #my-img{
+        width: 90%;
+    }
+    .imgbox{
+        display: flex;
+        flex-direction: column;
+    }
+    .para{
+        width: 100%;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin-top: 130px;
+    }
 }    
+@media (min-width:321px) and (max-width:375px) {
+    .first-nav{
+        height: 3.5rem;
+        position: fixed;
+        top: 0;
+    }
+    .name{
+        font-size: 20px;
+        position: relative;
+        right: 55px;
+    }
+    .fa-moon{
+        font-size: 20px;
+        margin-top: 10px;
+    }
+    .fa-sun{
+        font-size: 20px;
+        margin-top: 3px;
+    }
+    .btn-1{
+        /* margin-bottom: 10px; */
+        width: 100%;
+        padding: 10px 20px;
+        display: flex;
+        flex-direction: row;
+    }
+    .btn-2{
+        margin-top: 0px;
+        padding: 10px 25px;
+    }
+    .forImg{
+        width: 80%;
+        height: 105%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        left: 50%;
+        top: 80%;
+    }
+    .aboutme{
+        margin-top: 100px;
+    }
+    .followme{
+        font-size: 3rem;
+        position: absolute;
+        top: 100%;
+    }
+    #scroll-btn{
+        position: absolute;
+        left: 525px;
+        top: 105%;
+    }
+    #Scroll-text{
+        position: absolute;
+        top: 570px;
+        left: 355px;
+        font-size: 20px;
+        width: 100%;       
+    }
+    .for-bg{
+        height: 80%;
+    }
+    .navbar ul{
+        position: fixed;
+        bottom: 0;
+        width: 70%;
+        display: flex;
+        align-items: center;
+        font-size: 1.8rem;
+    }
+    .navbar{
+        position: fixed;
+        bottom: 0;
+        padding: 5px;
+    }
+    #my-img{
+        width: 94%;
+    }
+    .my-self{
+        position: absolute;
+        top: 47%;
+        left: 90%;
+        font-size: 2rem;    
+    }
+    .btn{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+    .boxes{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.5rem;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .imgbox{
+        display: flex;
+        flex-direction: column;
+    }
+    .para{
+        margin-top: 140px;
+        left: 0;
+        right: 0;
+        width: 95%;
+        text-align: center;
+        /* margin-bottom: 20px; */
+        padding-bottom: 20px;      
+    }
+    .box1{
+        width: 80%;
+        height: 80%;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .box1 h6{
+        display: flex;
+        flex-direction: row;
+    }
+    .box1 span{
+        display: flex;
+        margin-left: 3px;
+    }
+    .box2{
+        width: 80%;
+        height: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .box3{
+        width: 80%;
+        height: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .box3 h6{
+        display: flex;
+        flex-direction: row;
+    }
+    .box3 span{
+        display: flex;
+        margin-left: 3px;
+    }
+}
+@media (min-width:376px) and (max-width:425px){
+    .boxes{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 0.5rem;
+    }
+    .imgbox{
+        display: flex;
+        flex-direction: column;
+    }
+    #my-img{
+        width: 93%;
+    }
+    .forImg{
+        width: 80%;
+        height: 105%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        left: 50%;
+        top: 80%;
+    }
+    .aboutme{
+        margin-top: 100px;
+    }
+    .followme{
+        font-size: 3rem;
+        position: absolute;
+        top: 100%;
+    }
+    #scroll-btn{
+        position: absolute;
+        left: 525px;
+        top: 105%;
+    }
+    #Scroll-text{
+        position: absolute;
+        top: 570px;
+        left: 355px;
+        font-size: 20px;
+        width: 100%;       
+    }
+    .for-bg{
+        height: 80%;
+    }
+    .my-self{
+        position: absolute;
+        top: 47%;
+        left: 85%;
+        font-size: 2rem;    
+    }
+    .btn{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+    .btn-1{
+        /* margin-bottom: 10px; */
+        width: 100%;
+        padding: 10px 20px;
+        display: flex;
+        flex-direction: row;
+    }
+    .btn-2{
+        margin-top: 0px;
+        padding: 10px 25px;
+    }
+    .first-nav{
+        height: 3.5rem;
+        position: fixed;
+        top: 0;
+    }
+    .name{
+        font-size: 20px;
+        position: relative;
+        right: 55px;
+    }
+    .fa-moon{
+        font-size: 20px;
+        margin-top: 12px;
+    }
+    .fa-sun{
+        font-size: 20px;
+        margin-top: 3px;
+    }
+    .navbar ul{
+        position: fixed;
+        bottom: 0;
+        width: 80%;
+        display: flex;
+        align-items: center;
+        font-size: 1.8rem;
+    }
+    .navbar{
+        position: fixed;
+        bottom: 0;
+        padding: 5px;
+    }    
+    .para{
+        margin-top: 140px;
+        left: 0;
+        right: 0;
+        width: 95%;
+        text-align: center;
+        /* margin-bottom: 20px; */
+        padding-bottom: 20px;
+    }
+    .box1{
+        width: 80%;
+        height: 80%;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .box1 h6{
+        display: flex;
+        flex-direction: row;
+    }
+    .box1 span{
+        display: flex;
+        margin-left: 3px;
+    }
+    .box2{
+        width: 80%;
+        height: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .box3{
+        width: 80%;
+        height: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .box3 h6{
+        display: flex;
+        flex-direction: row;
+    }
+    .box3 span{
+        display: flex;
+        margin-left: 3px;
+    }
+}
+
