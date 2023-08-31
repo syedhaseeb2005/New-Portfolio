@@ -73,6 +73,7 @@ body{
     padding: 12px 18px;
     border-radius: 50px;
     backdrop-filter: blur(20px);
+    animation: SlideAnimation 1s ease forwards;
 }
 #icons{
     color: hsla(219,15%,95%,1);
